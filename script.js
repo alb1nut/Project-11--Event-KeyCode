@@ -5,7 +5,7 @@ window.addEventListener('keydown' , (e) => {
     console.log(e);
     container.innerHTML = `
     <div class="key">
-           ${e.key}
+           ${e.key === " " ? 'Space' : e.key} 
             <small>event.key</small>
         </div>
         <div class="key">
